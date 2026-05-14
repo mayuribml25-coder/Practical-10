@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames and iFrames Demo</title>
+</head>
+
+<frameset cols="30%,70%">
+
+    <!-- Left Frame -->
+    <frame src="menu.html" name="menuFrame">
+
+    <!-- Right Frame -->
+    <frame src="content.html" name="contentFrame">
+
+</frameset>
+
+<!-- menu.html -->
+<body>
+    <h2>Menu</h2>
+    <a href="https://www.wikipedia.org" target="contentFrame">Wikipedia</a><br><br>
+    <a href="https://www.google.com" target="contentFrame">Google</a>
+</body>
+
+<!-- content.html -->
+<body>
+    <h1>iFrame Example</h1>
+
+    <!-- External Web Page -->
+    <iframe src="https://www.wikipedia.org"
+            width="500"
+            height="250">
+    </iframe>
+
+    <br><br>
+
+    <!-- Google Map Embed -->
+    <iframe
+        src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="500"
+        height="250">
+    </iframe>
+
+</body>
+</html>
